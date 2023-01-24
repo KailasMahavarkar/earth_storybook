@@ -1,0 +1,45 @@
+section.factpage{
+    background-color: var(--darkspace);
+    color: white;
+
+    width: 100%;
+    height: 100vh;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.logo{
+    /* animate */
+    animation: factpage 3s ease-in-out;
+}
+
+li{
+    font-weight: bold;
+}
+
+@keyframes factpage {
+    0% {
+        opacity: 0;
+        transform: translate(-1000px);
+    }
+    20% {
+        transform: translate(400px);
+    }
+    40%{
+        transform: translate(-200px);
+    }
+    60% {
+        transform: translate(200px);
+    }
+    80% {
+        opacity: 1;
+        transform: translate(-100px);
+        transform: scale(1.5);
+    }
+    100% {
+        
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+    <link rel="stylesheet" type="text/css" href="css/utils.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- page specific css -->
+    <link rel="stylesheet" type="text/css" href="./css/pages/page2.css">
+
+    <!-- POPPINS FONT -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <title>
+        Facts About Earth
+    </title>
+</head>
+
+<body>
+    <section class="factpage">
+        <div class="factpage-container">
+            <div class="">
+                <div class="logo">
+                    <img src="./img/animated-earth-2.webp" alt="">
+                </div>
+            </div>
+            <div class="">
+                <div class="basepage-info">
+                    <ol>
+                        <li class="fade-item">Mass: 5,972,190,000,000,000 kg</li>
+                        <li class="fade-item">Diameter: 12,742 km</li>
+                        <li class="fade-item">Surface temperature: -88 to 58 degrees Celsius</li>
+                        <li class="fade-item">Moons: 1</li>
+                        <li class="fade-item">Year: 365.25 days</li>
+                        <li class="fade-item">Day: 23.9 hours</li>
+                        <li class="fade-item">Orbit Length (Time): 365.25 Earth days</li>
+                        <li class="fade-item">Planet Type: Terrestrial</li>
+                    </ol>
+
+                    <div class="nextpage">
+                        <div class="button-group">
+                            <a href="page1.html" class="button button-v1">
+                                Previous
+                            </a>
+
+                            <a href="page3.html" class="button button-v1">
+                                Next
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress progress-20">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        var items = document.getElementsByClassName("fade-item");
+
+        setTimeout(() => {
+            for (let i = 0; i < items.length; ++i) {
+                fadeIn(items[i], i * 1000)
+            }
+            function fadeIn(item, delay) {
+                setTimeout(() => {
+                    item.classList.add('fadein')
+                }, delay)
+            }
+        }, 3000)
+
+    </script>
+</body>
+
+</html>
